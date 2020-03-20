@@ -1,0 +1,9 @@
+from firebase import firebase
+
+Firebase_Host ="https://poolgarden-d505e.firebaseio.com"
+Firebase_Auth = "jEfuxfXWVUmld4IeQGs8VrVkGkPTMwXwKfHsqK6X"
+
+if __name__ == '__main__':
+    firebase = firebase.FirebaseApplication(Firebase_Host, None)
+    result = firebase.get('/Temp_In', None)
+    print(result)
